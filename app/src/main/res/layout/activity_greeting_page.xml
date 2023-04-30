@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Greeting_Page">
+
+    <ImageView
+        android:id="@+id/cakeImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/birthday_cake"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:contentDescription="@string/todo" />
+
+
+    <!--
+        scaleType is used to fit a small image in the whole screen
+    -->
+
+    <TextView
+        android:id="@+id/birthdayGreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/greetings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        android:textSize="35sp"
+        android:fontFamily="cursive"
+        android:textColor="@color/red"
+        android:textStyle="bold|italic"
+        />
+
+    <!--
+    while mentioning the size of a text or of a widget, we use 'sp' or 'dp'
+        here:-
+            sp -> scale independent pixel -> based on used font size preference -> used on texts
+            dp -> density independent pixel -> based on screen density -> used for mentioning the distance or the size of a widget
+
+    changes in 'dp' doesn't affects 'sp' & vice-versa
+-->
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
